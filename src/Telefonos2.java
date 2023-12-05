@@ -12,7 +12,7 @@ public class Telefonos2 {
         System.out.println("introduce un nombre");
         String persona = inputvalue.next();
         if (mapa1.containsKey(persona)) {
-            System.out.println("suS números son: " + mapa1.get(persona));
+            System.out.println("sus números son: " + mapa1.get(persona));
         } else {
             System.out.println("no contiene " + persona);
         }
