@@ -2,15 +2,18 @@ import static java.lang.Integer.parseInt;
 
 public class Jeroglificos {
     public static void main(String[] args) {
+        System.out.println(traducir(11));
+        System.out.println(traducir(200));
         System.out.println(traducir(1922));
+        System.out.println(traducir(0));
     }
     public static String traducir(int num){
-        String traducir = " ";
-        String numero = num + " ";
+        String traducir = "";
+        String numero = num + "";
         int contador = 0;
         for (int i = numero.length()-1; i >= 0; i--) {
             contador++;
-            for (int j = 0; j < parseInt(numero.charAt(i)+" "); j++) {
+            for (int j = 0; j < parseInt(numero.charAt(i)+""); j++) {
                 if (contador == 1) {
                     traducir += "T";
                 } else if (contador == 2) {
@@ -28,6 +31,10 @@ public class Jeroglificos {
                 }
             }
         }
-        return traducir;
+        String traducida = "";
+        for (int i = traducir.length()-1; i >= 0; i--) {
+            traducida += traducir.charAt(i);
+        }
+        return traducida;
     }
 }
