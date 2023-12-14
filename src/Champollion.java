@@ -34,7 +34,7 @@ public class Champollion {
                 }
             } else if(silabactual == "") {
                 silabactual += frase.charAt(i);
-                if (!vocales.contains(frase.charAt(i+1) +"") && (vocales.contains(frase.charAt(i+2) +"")) {
+                if (!vocales.contains(frase.charAt(i+1) +"") && (vocales.contains(frase.charAt(i+2) +""))) {
                     existe(mapa, silabactual);
                     silabactual = "";
                 } else {
@@ -48,11 +48,16 @@ public class Champollion {
     }
     public static Map<String, Integer> existe (Map<String, Integer> mapa, String silaba){
         int valor;
-        if (mapa.containsKey(silaba)){
-            valor = mapa.get(silaba)+1;
-            mapa.replace(silaba, valor);
-        } else {
-            mapa.put(silaba, 0);
+        String[] partida = silaba.split(" ");
+        for (int i = 0; i < partida.length; i++) {
+            if (partida[i]!=" ") {
+                if (mapa.containsKey(partida[i])) {
+                    valor = mapa.get(partida[i]) + 1;
+                    mapa.replace(partida[i], valor);
+                } else {
+                    mapa.put(partida[i], 0);
+                }
+            }
         }
         return mapa;
     }
