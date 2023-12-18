@@ -17,7 +17,7 @@ public class Anagramas {
         return alfabetizada;
     }
 
-   public static Map<String, String> Anagrama(String alfabetizada, String line, Map<String, String> palabras){
+   public static Map<String, String> anagrama(String alfabetizada, String line, Map<String, String> palabras){
         if (palabras.containsKey(alfabetizada)){
             String actual = palabras.get(alfabetizada) + " " + line;
             palabras.replace(alfabetizada, actual);
@@ -34,7 +34,7 @@ public class Anagramas {
         String line;
         Map<String, String> palabras = new HashMap<>();
         while ((line = reader.readLine())!=null) {
-            palabras = Anagrama(alfabetizada(line), line, palabras);
+            palabras = anagrama(alfabetizada(line), line, palabras);
         }
         for (String palabra : palabras.keySet()) {
             String[] actual = palabras.get(palabra).split(" ");
