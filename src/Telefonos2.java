@@ -2,6 +2,7 @@ import java.util.*;
 
 public class Telefonos2 {
     public static void main(String[] args) {
+        //OK
         Map<String, List<Integer>> mapa1 = new HashMap<String, List<Integer>>();
         mapa1.put("Luis", Arrays.asList(1, 1, 1, 1)) ;
         mapa1.put("Emma", Arrays.asList(2, 2, 2, 2));

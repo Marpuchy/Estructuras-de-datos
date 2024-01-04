@@ -19,6 +19,7 @@ public class Frequency {
     }
 
     public static void main(String[] args) {
+        //OK
         System.out.println(frequency("uno dos dos tres tres tres"));
     }
 }
