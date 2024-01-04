@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Altura {
     public static void main(String[] args) {
+        //OK
     ArrayList<Double> alumnos = new ArrayList<Double>();
     leerAlturas(alumnos, numeroAlumnos());
     mostrarResultados(alumnos , calcularMedia(alumnos));

@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class LaMejorTerminacion {
     public static void main(String[] args) {
+        //OK
         Scanner inputvalue = new Scanner(System.in);
         String[] numeros = inputvalue.nextLine().split(" ");
         Map<String, Integer> mapa1 = new HashMap<String, Integer>();

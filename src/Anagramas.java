@@ -29,6 +29,7 @@ public class Anagramas {
 
 
     public static void main(String[] args) throws IOException {
+        //OK
         String filepath = new File("").getAbsolutePath();
         BufferedReader reader = new BufferedReader(new FileReader(filepath.concat("/src/spanish-dict.txt")));
         String line;

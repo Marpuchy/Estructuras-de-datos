@@ -5,6 +5,7 @@ import static java.lang.Integer.parseInt;
 
 public class PapaNoel {
     public static void main(String[] args) {
+        //OK
         Scanner inputvalue = new Scanner(System.in);
         ArrayList<Integer> portales= new ArrayList<>();
         leerPortales(portales);
@@ -24,7 +25,8 @@ public class PapaNoel {
         portales.remove(0);
         while (!portales.isEmpty()) {
             int portalguardado = 0;
-            int diferenciamin = (int) Math.pow(10, 10);
+            //int diferenciamin = (int) Math.pow(10, 10);
+            int diferenciamin = Integer.MAX_VALUE;
             for (Integer portal : portales) {
                 if (Math.abs(actual - portal) < diferenciamin) {
                     diferenciamin = Math.abs(actual - portal);

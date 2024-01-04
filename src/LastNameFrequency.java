@@ -18,6 +18,7 @@ public class LastNameFrequency {
         }
     }
     public static void main(String[] args) throws IOException {
+        //OK
         String filepath = new File("").getAbsolutePath();
         BufferedReader reader = new BufferedReader(new FileReader(filepath.concat("/src/LastnameFrequencies.csv")));
         String line;
